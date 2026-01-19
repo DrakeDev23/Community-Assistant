@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publika - Service</title>
+    <link rel="icon" type="img/png" href="assets/favilogo.png">
+    <link rel="stylesheet" href="css/Eservice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <img src="assets/favilogo.png" id="logo" alt="Logo">
+            <h1>Publika</h1>
+        </div>
+        <span class="menu-toggle">☰</span>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="index.html#activies">Activities</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="Eservice.html">Services</a></li>
+                <li><a href="report.html">Report Issues</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero"> 
+        <div class="content-one">
+            <div class="content-text">
+                <h1>Service</h1>
+                <p>
+                    Our Barangay Service Portal allows residents to request assistance, 
+                    submit reports, and access essential community services quickly and efficiently
+                </p>
+                <button class="scrollBtn">Guide</button>
+            </div>
+            <div class="content-img">
+                <img src="assets/graphics.svg" alt="Barangay Services" class="service-image">
+            </div>
+        </div>
+        <div class="content-two">
+            <div class="service-container">
+                <div class="contents">
+                    <div class="form-header">
+                        <h1><i class="fas fa-clipboard-list"></i> Service Request</h1>
+                    </div>                
+                    <form class="service-content" action="#" method="POST">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input class="service-input" type="text" placeholder="First Name" required>
+                        </div>                     
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input class="service-input" type="text" placeholder="Last Name" required>
+                        </div>                    
+                        <div class="input-group">
+                            <i class="fas fa-home"></i>
+                            <input class="service-input" type="text" placeholder="Complete Address" required>
+                        </div>                   
+                        <div class="input-group">
+                            <i class="fas fa-phone"></i>
+                            <input class="service-input" type="tel" placeholder="Contact Number" required>
+                        </div>                   
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input class="service-input" type="email" placeholder="Email Address" required>
+                        </div>                       
+                        <div class="input-group">
+                            <i class="fas fa-list-alt"></i>
+                            <select class="service-input">
+                                <option value="">Select Service</option>
+                                <option>Barangay Blotter</option>
+                                <option>Medical Check-up</option>
+                                <option>Emergency Assistance</option>
+                                <option>Barangay Clearance</option>
+                                <option>National ID</option>
+                                <option>Vaccination Card</option>
+                                <option>Police Clearance</option>
+                                <option>Incident Report</option>
+                            </select>
+                        </div>                     
+                        <div class="input-group">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea class="service-input" rows="4" placeholder="Please describe your concern or request in detail"></textarea>
+                        </div>                
+                        <button class="service-btn" type="submit">
+                            <i class="fas fa-paper-plane"></i> Submit Request
+                        </button>
+                        <div class="success-container">
+                            <div class="success-content">
+                                <div class="success-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="success-text">
+                                    <h1>Successful!</h1>
+                                    <h3>Your service request has been sent</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="h1-header">More</h1>
+    <div class="additional-container">    
+        <div class="card">
+            <div class="step-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <h3 class="card-title">Go Back to Homepage</h3>
+            <p class="card-desc">
+                Return to the main page to explore announcements, updates, and other Barangay services.
+            </p>
+            <button class="card-btn"><a href="index.html">Home</a></button>
+        </div>
+        <div class="card">
+            <div class="step-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h3 class="card-title">Report an Issue</h3>
+            <p class="card-desc">
+                Submit complaints or report incidents within the community for proper action.
+            </p>
+            <button class="card-btn"><a href="report.html">Report Issue</a></button>
+        </div>
+        <div class="card">
+            <div class="step-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h3 class="card-title">Volunteer in Our Barangay</h3>
+            <p class="card-desc">
+                Join community programs and help improve safety, cleanliness, and public service.
+            </p>
+            <button class="card-btn"><a href="volunteer.html">Volunteer</a></button>
+        </div>
+    </div>
+    <section>
+        <div class="guide-container" id="scrollTarget">
+            <div class="steps">
+                <div class="steps-text">
+                    <h1>What is Barangay Service?</h1>
+                    <p>
+                        Barangay services are community-based assistance programs provided by local 
+                        government units to address the needs, concerns, and safety of residents.
+                    </p>
+                    <p>
+                        These services include issuing documents, responding to emergencies, handling 
+                        complaints, and ensuring peace and order within the community.
+                    </p>
+                </div>      
+                <div class="guide-images">
+                    <img src="assets/graphics.svg" alt="Service Guide Illustration">
+                </div>
+            </div>          
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Submit Request</h3>
+                    <p>
+                        Fill out the service request form with accurate details about your concern.
+                    </p>
+                </div>          
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Review Process</h3>
+                    <p>
+                        Barangay officials review your request to determine the appropriate action.
+                    </p>
+                </div>             
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Processing</h3>
+                    <p>
+                        The request is processed and coordinated with the proper Barangay department or personnel.
+                    </p>
+                </div>    
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Completion</h3>
+                    <p>
+                        Once completed, you will be notified about the status or resolution of your request.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="copyrights">
+            <div class="copyrights-contents">
+                <div class="copyrights-icon">
+                    <img src="assets/favilogo.png" alt="">
+                </div>
+                <h3>Publika</h3>
+                <p>&copy; 2026 PUBLIKA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/Eservice.js"></script>
+</body>
+</html>

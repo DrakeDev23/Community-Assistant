@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publika - Volunteer</title>
+    <link rel="icon" type="img/png" href="assets/favilogo.png">
+    <link rel="stylesheet" href="css/volunteer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <img src="assets/favilogo.png" id="logo">
+            <h1>Publika</h1>
+        </div>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>                
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="index.html#activies">Activities</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="Eservice.html">Services</a></li>
+                <li><a href="report.html">Report Issues</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="volunteer-section">
+    <div class="volunteer-layout">
+        <div class="volunteer-info">
+            <h2>Volunteer for the Community</h2>
+            <p>
+                Volunteering is more than giving time  its about creating
+                opportunities, strengthening communities, and shaping a better
+                future for the youth
+            </p>
+            <ul class="features">
+                <li>Support local community programs</li>
+                <li>Help families and individuals in need</li>
+                <li>Build leadership and teamwork skills</li>
+                <li>Gain real-world experience</li>
+                <li>Make a lasting positive impact</li>
+            </ul>
+        </div>
+        <div class="volunteer-form">
+            <h1>Volunteer Registration</h1>
+            <div class="underage-box" id="underageBox">
+                You must be 18 years old to volunteer.
+            </div>
+            <div class="form-message" id="formMessage"></div>
+            <form id="volunteerForm">
+                <div class="form-row two-cols">
+                    <div class="field">
+                        <label>First Name</label>
+                        <input type="text" maxlength="50" placeholder="First Name" required>
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" maxlength="50" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-row two-cols">
+                    <div class="field">
+                        <label>Age</label>
+                        <input type="number" min="1" placeholder="Age" id="age" required>
+                    </div>
+                    <div class="field">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="09XXXXXXXXX or +63XXXXXXXXX" id="phone-num" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field">
+                        <label>Address</label>
+                        <input type="text" placeholder="Full Address" required>
+                    </div>
+                </div>
+                <div class="gender">
+                    <label>
+                        <input type="radio" name="gender" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"> Female
+                    </label>
+                </div>
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+    <script src="js/volunteer.js"></script>
+</html>

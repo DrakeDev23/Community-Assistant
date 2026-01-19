@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publika</title>
+    <link rel="icon" type="image/png" href="assets/favilogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <img src="assets/favilogo.png" id="logo" alt="Logo">
+            <h1>Publika</h1>
+        </div>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#activies">Activities</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="Eservice.html">Services</a></li>
+                <li><a href="report.html">Report Issues</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-content">
+    <h2>
+        We Provide a better <br>
+        <span id="assis">Community Assistant</span><br>
+        and <span id="services">E-Services</span> to<br>
+        Our fellow Residents
+    </h2>
+    <div class="home-buttons">
+        <a href="#contact" id="contactUs">Contact us</a>
+        <a href="announcements.html" id="announce">Announcements</a>
+    </div>
+</div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <img src="assets/favilogo.png" id="logos" alt="Logo">
+                <p class="weDo">What we do</p>
+                <p class="paragraph">We provide a community assistant platform that helps people easily access local services, information and support in one place Our system guides users through common community needs such as public services, inquiries, and assistance requests with clear and simple steps</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/sk.jpg" alt="Community" style="width: 100%;  border-radius: 15px;  box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+    <section id="programs">
+        <div class="programs-container">
+            <div class="programs-header">
+                <h2>Our Programs</h2>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Health Assistance</h3>
+                    <p>Free medical checkups and medicines for residents in need. We partner with local health providers to ensure everyone gets the care they deserve.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Youth Development</h3>
+                    <p>Activities and leadership training programs designed to empower young people and develop their potential for future success</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Community Updates</h3>
+                    <p>Stay updated with local news, announcements, and important information about community events and initiatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="activies">
+        <div class="activities-wrapper">
+            <div class="activities-content">
+                <h4 class="header-activities">Community Activities</h4>
+                <p class="paragraph-activities">
+                    Empowering communities through meaningful activities strengthens unity and encourages active participation among residents These efforts help create positive change and build a stronger, more connected community
+                </p>
+                <button id="join">Join now</button>
+            </div>
+            <div class="activities-images">
+                <div class="activities-track">
+                    <div class="activity-image-card">
+                        <img src="assets/feeding.jpg">
+                    </div>
+                    <div class="activity-image-card">
+                        <img src="assets/youth.png">
+                    </div>
+                    <div class="activity-image-card">
+                        <img src="assets/tutor.jpg">
+                    </div>
+                    <div class="activity-image-card">
+                        <img src="assets/cleanBeach.jpg">
+                    </div>
+                    <div class="activity-image-card">
+                        <img src="assets/recycle.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <small>+ PUBLIKA • Contact Us</small>
+                <h1>Contact Us</h1>
+                <p>
+                    Have a question or need assistance? Get in touch with us anytime
+                    We're always happy to help and look forward to connecting with you
+                </p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" maxlength="50" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phonenumber" placeholder="Mobile number +63" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-location-dot"></i>
+                        <input type="text" id="address" placeholder="Home Address" required>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <textarea id="message" placeholder="How we can help?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Office Address</h3>
+                <p><i class="fas fa-location-dot"></i> Ma. Gochan St, Cebu City, 6000 Cebu</p>
+                <a href="https://www.google.com/maps/place/Barangay+Hall+of+mambaling/@10.2877882,123.8759108,16z/data=!4m15!1m8!3m7!1s0x33a99c0f273fb311:0x74495a1541c16233!2sMambaling,+Cebu+City,+6000+Cebu!3b1!8m2!3d10.288614!4d123.8788002!16s%2Fg%2F1tdkv67v!3m5!1s0x33a99c051b935ff1:0xea5eceb61ff03896!8m2!3d10.292278!4d123.8766006!16s%2Fg%2F11b5ysl6k0?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    <i class="fas fa-map"></i> View on Map
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay connected with our community</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/KhrisChann" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/0_dr4k3/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://ph.linkedin.com/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> Publika@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +63 123 456 7890</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8AM - 5PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Publika All rights reserved</p>
+        </div>
+    </footer>
+    <div class="toast" id="toast">Message sent successfully!</div>
+</body>
+    <script src="js/script.js"></script>
+</html>

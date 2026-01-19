@@ -1,0 +1,314 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f6f8;
+}
+
+.header {
+background-color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+height: 70px;
+box-shadow: 1px 4px 3px gray;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+.brand {
+display: flex;
+align-items: center;
+}
+
+#logo {
+height: 50px;
+width: auto;
+margin-top: -5px;
+margin-right: -25px;
+}
+
+.brand h1 {
+color: black;
+font-size: 28px;
+line-height: 1;
+margin: 0;
+}
+
+nav ul {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+
+nav ul a {
+display: block;
+text-align: center;
+background-color: #d2d2d29a;
+box-shadow: 2px 3px 5px gray;
+font-size: 15px;
+text-decoration: none;
+color: black;
+border-radius: 10px;
+padding: 6px 15px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+transition: all 0.3s ease;
+}
+
+nav a:hover {
+background-color: #d2d2d253;
+transform: translateY(-2px);
+}
+
+nav ul li:nth-child(7) a {
+color: white;
+background-color: orange;
+padding: 6px 14px;
+display: inline-block;
+}
+
+nav ul li:nth-child(7) a:hover {
+background-color: rgba(246, 131, 0, 0.628);
+}
+
+.menu-toggle {
+font-size: 25px;
+cursor: pointer;
+display: none;
+}
+
+#home {
+min-height: calc(100vh - 70px);
+padding-top: 1px;
+background: radial-gradient(ellipse at center, rgba(117, 122, 95, 0.7), rgba(117, 122, 95, 0.7)), url("../assets/bg.jpg");
+background-size: cover;
+background-position: center;
+margin-top: 70px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+#home h2 {
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: clamp(40px, 5vw, 55px);
+margin-left: 10%;
+margin-top: -15%;
+line-height: 1.2;
+}
+
+#assis {
+color: orange;
+}
+
+#services {
+color: rgb(229, 140, 67);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.announcements-section {
+    padding: 120px 20px 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+    color: #ff7a00;
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.announcement-card {
+    opacity: 0;
+    animation: cardUp 0.6s ease forwards;
+}
+
+.card-inner {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-card:hover .card-inner {
+    transform: scale(1.1); 
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+.announcement-card h3 {
+    margin: 12px 0;
+    color: #333;
+}
+
+.date {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.tag {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.tag.important { background: #ffe5e5; color: #b00000; }
+.tag.event { background: #e6f0ff; color: #0047b3; }
+.tag.notice { background: #fff3cd; color: #856404; }
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
+        color: black;
+        user-select: none;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+
+        opacity: 0;
+        transform: translateY(-15px);
+        pointer-events: none;
+
+        transition: opacity 0.35s ease, transform 0.35s ease;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    #navbar.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        opacity: 0;
+        transform: translateY(10px);
+        animation: navItemFade 0.4s ease forwards;
+    }
+
+    nav ul li:nth-child(1) { animation-delay: 0.05s; }
+    nav ul li:nth-child(2) { animation-delay: 0.1s; }
+    nav ul li:nth-child(3) { animation-delay: 0.15s; }
+    nav ul li:nth-child(4) { animation-delay: 0.2s; }
+    nav ul li:nth-child(5) { animation-delay: 0.25s; }
+    nav ul li:nth-child(6) { animation-delay: 0.3s; }
+    nav ul li:nth-child(7) { animation-delay: 0.35s; }
+
+    nav ul a {
+        width: 85%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@keyframes navItemFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-load {
+    animation: fadeIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+body.page-load {
+    animation: pageFade 0.6s ease forwards;
+    opacity: 0;
+}
+
+@keyframes pageFade {
+    to { opacity: 1; }
+}
+
+.header {
+    animation: headerDrop 0.6s ease forwards;
+}
+
+@keyframes headerDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.announcement-card {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: cardReveal 0.6s ease forwards;
+}
+
+@keyframes cardReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.announcement-card:nth-child(1) { animation-delay: 0.1s; }
+.announcement-card:nth-child(2) { animation-delay: 0.2s; }
+.announcement-card:nth-child(3) { animation-delay: 0.3s; }
+.announcement-card:nth-child(4) { animation-delay: 0.4s; }
+.announcement-card:nth-child(5) { animation-delay: 0.5s; }
+.announcement-card:nth-child(6) { animation-delay: 0.6s; }
+.announcement-card:nth-child(7) { animation-delay: 0.7s; }
+.announcement-card:nth-child(8) { animation-delay: 0.8s; }
+.announcement-card:nth-child(9) { animation-delay: 0.9s; }
